@@ -1,9 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Title = ({ title }) => (
-    <>
-        <h2 className="title" > {title}</h2>
-    </>
+  <>
+    <h2 className="title"> {title}</h2>
+  </>
 );
 
 export default Title;

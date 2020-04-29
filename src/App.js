@@ -1,17 +1,15 @@
 import React, { Component } from 'react';
-import user from './user.json';
-import statisticalData from './statistical-data.json';
-import friends from './friends.json';
-import transactions from './transactions.json';
+import user from './data/user.json';
+import statisticalData from './data/statistical-data.json';
+import friends from './data/friends.json';
+import transactions from './data/transactions.json';
 import Profile from './components/profile/Profile';
 import Statistics from './components/statistics/Statistics';
-import FriendList from './components/friendList/FriendList';
+import { FriendList } from './components/friendList/FriendList';
 import TransactionHistory from './components/transactionHistory/TransactionHistory';
 
-console.log('transactions:', transactions);
-
 class App extends Component {
-  state = {}
+  state = {};
   render() {
     return (
       <>
@@ -22,10 +20,7 @@ class App extends Component {
           avatar={user.avatar}
           stats={user.stats}
         />
-        <Statistics
-          title="Upload stats"
-          stats={statisticalData}
-        />
+        <Statistics title="Upload stats" stats={statisticalData} />
         <FriendList friends={friends} />
         <TransactionHistory items={transactions} />
       </>
