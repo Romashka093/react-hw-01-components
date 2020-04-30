@@ -1,13 +1,13 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import css from './History.module.css';
 
 const History = ({ items }) => (
   <>
     {items.map(item => (
-      <tr key={item.id}>
-        <th>{item.type}</th>
-        <th>{item.amount}</th>
-        <th>{item.currency}</th>
+      <tr className={css.colum} key={item.id}>
+        <td>{item.type}</td>
+        <td>{item.amount}</td>
+        <td>{item.currency}</td>
       </tr>
     ))}
   </>

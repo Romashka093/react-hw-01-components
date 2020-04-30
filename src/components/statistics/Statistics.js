@@ -1,14 +1,14 @@
 import React from 'react';
-import Stats from './stats/Stats.js';
-import Title from './title/Title.js';
-import PropTypes from 'prop-types';
+import StatsStatistics from './statsStatistics/StatsStatistics.js';
+import TitleStatistics from './titleStatistics/TitleStatistics.js';
+import css from './Statistics.module.css';
 
 const Statistics = props => (
   <>
-    <section className="statistics">
-      <Title title={props.title} />
-      <ul className="stat-list">
-        <Stats stats={props.stats} />
+    <section className={css.statistics}>
+      <TitleStatistics title={props.title} />
+      <ul className={css.statList}>
+        <StatsStatistics stats={props.stats} />
       </ul>
     </section>
   </>

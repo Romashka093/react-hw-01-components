@@ -1,15 +1,15 @@
 import React from 'react';
-import Title from './title/Title.js';
+import TitleTransactionHistory from './titleTransactionHistory/TitleTransactionHistory.js';
 import History from './history/History.js';
-import PropTypes from 'prop-types';
+import css from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ items }) => (
   <>
-    <table className="transaction-history">
-      <thead>
-        <Title />
+    <table className={css.transactionHistory}>
+      <thead className={css.transactionHistoryTitle}>
+        <TitleTransactionHistory />
       </thead>
-      <tbody>
+      <tbody className={css.transactions}>
         <History items={items} />
       </tbody>
     </table>

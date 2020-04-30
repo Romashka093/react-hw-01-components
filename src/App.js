@@ -7,12 +7,13 @@ import Profile from './components/profile/Profile';
 import Statistics from './components/statistics/Statistics';
 import { FriendList } from './components/friendList/FriendList';
 import TransactionHistory from './components/transactionHistory/TransactionHistory';
+import css from './App.module.css';
 
 class App extends Component {
   state = {};
   render() {
     return (
-      <>
+      <div className={css.container}>
         <Profile
           name={user.name}
           tag={user.tag}
@@ -23,7 +24,7 @@ class App extends Component {
         <Statistics title="Upload stats" stats={statisticalData} />
         <FriendList friends={friends} />
         <TransactionHistory items={transactions} />
-      </>
+      </div>
     );
   }
 }
