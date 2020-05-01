@@ -1,1 +1,1 @@
-> [components](https://romashka093.github.io/goit-react-hw-01-components/)
+> [components](https://romashka093.github.io/react-hw-01-components/)
