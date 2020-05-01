@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './StatisticPrifile.module.css';
 
-const StatisticPrifile = ({ stats }) => {
+export function StatisticPrifile({ stats }) {
   const followers = stats.followers.toLocaleString('ru-RU', {
     useGrouping: true,
   });
@@ -30,6 +30,4 @@ const StatisticPrifile = ({ stats }) => {
       </li>
     </>
   );
-};
-
-export default StatisticPrifile;
+}
