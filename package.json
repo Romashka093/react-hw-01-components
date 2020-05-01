@@ -1,5 +1,5 @@
 {
-    "name": "goit-react-hw-01-components",
+    "name": "react-hw-01-components",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -12,7 +12,7 @@
         "react-dom": "^16.13.1",
         "react-scripts": "^3.4.0"
     },
-    "homepage": "https://romashka093.github.io/goit-react-hw-01-components/",
+    "homepage": "https://romashka093.github.io/react-hw-01-components/",
     "scripts": {
         "start": "react-scripts start",
         "build": "react-scripts build",
